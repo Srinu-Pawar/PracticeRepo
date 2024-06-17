@@ -1,4 +1,5 @@
 //WAP to print Next Prime Number of a Given Number using Method...
+
 import java.util.Scanner;
 class NextPrimeNumUsingMethod 
 {
