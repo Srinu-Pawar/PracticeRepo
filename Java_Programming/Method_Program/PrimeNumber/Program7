@@ -1,1 +1,49 @@
+//WAP to print The Given Number is TwistedPrime number or Not using method...
+import java.util.Scanner;
+class TwistedPrimeUsingMethod 
+{
+	public static boolean isPrime(int num)
+	{
+		int count=0;
+		for (int i=1; i<=num; i++)
+		{
+			if (num%i==0)
+			{
+				count++;
+			}
+		}
+		if(count==2)
+		return true;
+		else
+		return false;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int num=sc.nextInt();
+		if (isPrime(num)==true)
+		{
+			int rev=0;
+			while (num>0)
+			{
+				rev=rev*10+num%10;
+				num=num/10;
+			}
+			if (isPrime(rev)==true)
+			{
+				System.out.println("given Number is Twisted Prime Number :");
+			}
+			else
+			{
+				System.out.println("Given Number is Prime,but Not Twisted prime number :");
+			}
+		}
+		else
+		{
+			System.out.println("Given Number is Not a Prime number ");
+			System.out.println("Hence,Given Number cannot be a Twisted Prime Number ");
+		}
+	}
+}
 
