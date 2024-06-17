@@ -1,1 +1,32 @@
-
+//WAP to print FirstNth Prime Number using while loop
+import java.util.Scanner;
+class FirstNthPrimeNumUsingWhile 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Nth Number");
+		int n=sc.nextInt();
+		System.out.println("First "+n+" Prime Numbers are.... ");
+		int i=1,sln=1;
+		while( sln<=n)
+		{
+			int count=0;
+			int j=1;
+			while(j<=i)
+			{
+				if (i%j==0)
+				{
+					count++;
+				}
+				j++;
+			}
+			if (count==2)
+			{
+			System.out.println(sln+")"+i);
+			sln++;
+			}
+			i++;
+		}	
+	}
+}
