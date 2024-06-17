@@ -1,1 +1,37 @@
-
+//WAP to print The Prime Numbers in the given Range Using Method with Serial Number....
+import java.util.Scanner;
+class PrimeNumGivenRangeUsingMethod1 
+{
+	public static boolean isPrime( int num)
+	{
+		int count=0;
+		for (int i=1; i<=num; i++ )
+		{
+			if (num%i==0)
+			{
+				count++;
+			}
+		}
+		if (count==2)
+			return true;
+		else
+			return false;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Range of the Prime Numbers....");	
+		int Min=sc.nextInt();
+		int Max=sc.nextInt();
+		System.out.println("Prime Numbers ....");
+		int sln=1;
+		for (int i=Min; i<=Max; i++)
+		{
+			if(isPrime(i)==true)
+			{
+				System.out.println(sln+") "+i);
+			sln++;
+			}
+		}
+	}
+}
