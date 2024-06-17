@@ -1,1 +1,27 @@
-
+//WAP to Print prime number of given Range using for loop
+import java.util.Scanner;
+class PrimeNumGivenRange 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter min number :");
+		int min=sc.nextInt();
+		System.out.println("Enter Max number :");
+		int max=sc.nextInt();
+		System.out.println("prime Number of Given Range:");
+		for (int j=min; j<=max ; j++)
+		{
+			int count=0;
+			for (int i=1; i<=j ; i++)
+			{
+				if(j%i==0)
+				{
+					count++;
+				}
+			}
+			if(count==2)
+			System.out.println(j);	
+		}
+	}
+}
