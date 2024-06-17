@@ -1,1 +1,39 @@
+//WAP to Print Nth prime Number Using Method...
+import java.util.Scanner;
+class NthPrimeNumUsingMethod 
+{
+	public static boolean isPrime(int num)
+	{
+		int count=0;
+		for (int i=1; i<=num ; i++)
+		{
+			if (num%i==0)
+			{
+				count++;
+			}
+		}
+		if (count ==2)
+			return true;
+		else 
+			return false;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Nth prime Number :");
+		int n=sc.nextInt();
+		System.out.println("-----------------------");
+		System.out.println(n+" Prime Numbers is......");
+		int sln=1;
+		for (int i=1; sln<=n; i++)
+		{
+			if(isPrime(i)==true)
+			{
+				if(sln==n)
+				System.out.println(sln+") "+i);
+			    sln++;
+			}
+		}
+	}
+}
 
