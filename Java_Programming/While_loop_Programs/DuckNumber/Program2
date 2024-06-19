@@ -1,1 +1,29 @@
+// WAP to print the given Number is Duck Number or Not Using for Loop
+import java.util.Scanner;
+class DuckNumUsingWhile1 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int Num=sc.nextInt();
+		int temp=Num;
+		int count=0;
+		while (temp>0)
+		{
+			int ld=temp%10;
+			if(ld==0)
+			{
+				count++;
+				break;
+			}
+			temp=temp/10;
+		}
+		if(count==1)
+			System.out.println("Duck Number :");
+		else 
+			System.out.println("Not Duck Number :");
+
+	}
+}
 
