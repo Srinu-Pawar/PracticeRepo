@@ -1,1 +1,29 @@
+// WAP to print the given Number is Duck Number or Not, using for loop
+import java.util.Scanner;
+class DuckNumUsingFor 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int Num=sc.nextInt();
+		//int temp=Num;
+		//int count=0
+		int ld=0;
+		boolean f=false;
+		for(int temp=Num; temp>0; temp=temp/10)
+		{
+			if(temp%10==0)
+			{
+				f=true;
+				break;
+			}
+			
+		}
+		if(f==true)
+			System.out.println("Duck Number :");
+		else 
+			System.out.println("Not Duck Number :");
 
+	}
+}
