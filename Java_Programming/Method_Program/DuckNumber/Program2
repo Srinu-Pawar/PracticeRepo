@@ -1,1 +1,37 @@
+//WAP to print next Duck number of a given number using method....
+import java.util.Scanner;
+class NextDuckNumOfGivenNumUsingMethod 
+{
+	public static void nextDuckNum(int temp)
+	{
+		while (true)
+		{
+			temp++;
+			int num=temp;
+			int count=0;
+			while (num>0)
+			{
+				int ld=num%10;
+				if (ld==0)
+				{
+					count++;
+					break;
+				}
+				num=num/10;
+			}
+			if (count==1)
+			{
+				System.out.println("Next Duck number of a Given Num is:"+temp);
+				break;
+			}
+		}
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int num=sc.nextInt();
+		nextDuckNum(num);
+	}
+}
 
