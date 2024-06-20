@@ -1,1 +1,42 @@
+//WAP to print nth duck number Using method
+import java.util.Scanner;
+class NthDuckNumUsingMethod 
+{
+	public static boolean isDuck(int num)
+	{
+		boolean isDuck=false;
+		//int count=0;
+		int temp=num;
+		while (temp>0)
+		{
+			int ld=temp%10;
+			if (ld==0)
+			{
+				isDuck=true; //count++;
+							 //break;
+			}
+			temp/=10;
+		}
+		if(isDuck==true)   //if (count==1)
+		return true;
+		else
+		return false;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter a Nth Number :");
+		int n=sc.nextInt();
+		int sln=1;
+		for (int i=1; sln<=n; i++ )
+		{
+			if(isDuck(i)==true)
+			{
+				if (sln==n)
+				System.out.println(sln+")"+i);
+				sln++;
+			}
+		}
+	}
+}
 
