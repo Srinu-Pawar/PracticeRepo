@@ -1,1 +1,37 @@
+//WAP to Print Duck Number in the given Range using while loop ....
+import java.util.Scanner;
+class RangeOfDuckNumUsingWhile 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Min Number :");
+		int min=sc.nextInt();
+		System.out.println("Enter Max Number :");
+		int max=sc.nextInt();
+		System.out.println("Duck Number in the Given Range :");
+		int sln=1;
+		while (min<=max)
+		{
+			int count=0;
+			int temp=min;
+			while (temp>0)
+			{
+				int ld=temp%10;
+				if (ld==0)
+				{
+					count++;
+					break;
+				}
+				temp=temp/10;
+			}
+			if(count ==1)
+			{
+			 System.out.println(sln+"."+min);
+			 sln++;
+			}
+		min++;
+		}
+	}
+}
 
