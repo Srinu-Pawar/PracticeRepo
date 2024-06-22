@@ -1,1 +1,19 @@
-
+//WAP to print Product of Digit of a Given Number using while loop
+import java.util.Scanner;
+class ProductOfDigitOfANumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number: ");
+		int Num=sc.nextInt();
+		int temp=Num;
+		int prod=1;
+		while (Num>0)
+		{
+			prod=prod*(Num%10);
+			Num=Num/10;
+		}
+		System.out.println("Product of "+temp+" is :"+prod);
+	}
+}
