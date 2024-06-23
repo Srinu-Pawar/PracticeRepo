@@ -1,1 +1,23 @@
+//WAP to print the product of the Digit of a Given Number Using Number.....
+import java.util.Scanner;
+class ProdOfDigitUsingMethod
+{
+	public static void prodOfDigit(int n)
+	{
+		int prod=1;
+		while (n>0)
+		{
+			prod=prod*(n%10);
+			n=n/10;
+		}
+		System.out.println("Product Of Digit :"+prod);
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number....");
+		int Num=sc.nextInt();
+		prodOfDigit(Num);
+	}
+}
 
