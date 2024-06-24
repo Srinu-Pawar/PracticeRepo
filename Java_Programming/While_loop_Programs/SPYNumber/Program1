@@ -1,1 +1,25 @@
-
+//WAP to Print the Given Number is SPY Number or Not Using While Loop
+import java.util.Scanner;
+class SPYNumberOrNot  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number: ");
+		int Num=sc.nextInt();
+		int sum=0,prod=1;
+		int temp=Num;
+		while (temp>0)
+		{
+			sum=sum+(temp%10);
+			prod=prod*(temp%10);
+			temp=temp/10;
+		}
+		System.out.println("Sum of Digit of "+Num+"is :"+sum);
+		System.out.println("Product of Digit of"+Num+"is :"+prod);
+		if(sum==prod)
+			System.out.println("SPY Number ......");
+		else
+			System.out.println("Not SPY Number.....");
+	}
+}
