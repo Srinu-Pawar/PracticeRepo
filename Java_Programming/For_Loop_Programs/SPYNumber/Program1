@@ -1,1 +1,22 @@
+//WAP to print Given Number is Spy Number or Not using for loop
+import java.util.Scanner;
+class SPYNumUsingFor 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int Num=sc.nextInt();
+		int sum=0,prod=1;
+		for(int temp=Num; temp>0; temp=temp/10)
+		{
+			sum=sum+(temp%10);
+			prod=prod*(temp%10);
+		}
+		if(sum==prod)
+			System.out.println("Spy Number.....");
+		else 
+			System.out.println("Not Spy Number.....");
+	}
+}
 
