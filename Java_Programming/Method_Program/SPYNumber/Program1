@@ -1,1 +1,38 @@
-
+//WAP to print the Nth SPY Number using Method....
+import java.util.Scanner;
+class NthSPYNumUsingMethod
+{
+	public static boolean SPY(int Num)
+	{
+		int prod=1,sum=0;
+		while (Num>0)
+		{
+			 sum=sum+(Num%10);
+			 prod=prod*(Num%10);
+			 Num=Num/10;
+		}
+		if (sum==prod)
+		return true;
+		else
+		return false;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number..");
+		int n=sc.nextInt();
+		int sln=1;
+		for (int i=1; sln<=n; i++)
+		{
+			if(SPY(i)==true)
+			{
+				sln++;
+				if (sln==n)
+				{
+				System.out.println("Nth SPY Number is.."+i);
+				break;
+				}
+			}
+		}
+	}
+}
