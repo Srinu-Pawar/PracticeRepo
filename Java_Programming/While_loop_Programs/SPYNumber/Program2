@@ -1,1 +1,31 @@
+//WAP to print SPY Number of a Given range using while loop
+import java.util.Scanner;
+class RangeOfSPYUsingwhile 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Min Number :");
+		int min =sc.nextInt();
+		System.out.println("Enter max Number :");
+		int max =sc.nextInt();
+		System.out.println("SPY Number between the given range is:");
+		while (min<=max)
+		{
+			int temp=min;
+			int sum=0,prod=1;
+			while (temp>0)
+			{
+				sum=sum+(temp%10);
+				prod=prod*(temp%10);
+				temp=temp/10;
+			}
+			if(sum==prod)
+			{
+				System.out.println(min);
+			}
+		min++;
+		}
+	}
+}
 
