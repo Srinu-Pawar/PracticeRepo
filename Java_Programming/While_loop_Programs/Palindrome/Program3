@@ -1,1 +1,33 @@
+//WAP to Print the Nth Prime Number with Serial Number;
+import java.util.Scanner;
+class NthPralindromNum2 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Nth Number :");
+		int n=sc.nextInt();
+		int i=1;
+		int sln=1;
+		while (true)
+		{
+			int rev=0;
+			for (int temp=i; temp>0; temp=temp/10)
+			{
+				rev=(rev*10)+temp%10;
+			}
+			if (rev==i)
+			{
+				sln++;
+				if(sln==n)
+				{
+				System.out.println(sln+" palndrome Num is :"+i);
+				break;
+				}
+				
+			}
+		i++;
+		}
+	}
+}
 
