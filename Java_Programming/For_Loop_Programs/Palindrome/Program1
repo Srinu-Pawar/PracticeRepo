@@ -1,1 +1,21 @@
-
+//WAP to print palindrome Number or Not using for loop 
+import java.util.Scanner;
+class PalindromeNumUsingfor 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int Num=sc.nextInt();
+		int rev=0;
+		for (int temp=Num;  temp>0; temp=temp/10)
+		{
+			rev=rev*10+(temp%10);
+		}
+		System.out.println("Reverse of the "+Num+" is :"+rev);
+		if(rev==Num)
+			System.out.println("Palindrome Number");
+		else
+			System.out.println(" Not Palindrome Number");
+	}
+}
