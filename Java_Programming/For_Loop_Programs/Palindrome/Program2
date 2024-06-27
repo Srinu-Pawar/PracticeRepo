@@ -1,1 +1,25 @@
+//WAP to print the Palindrome Numbers in the Given Range using for loop
+import java.util.Scanner;
+class RangeofPalindromeUsingfor 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Min Number :");
+			int min=sc.nextInt();
+		System.out.println("Enter Max Number :");
+			int max=sc.nextInt();
+			System.out.println("Palindrome Numbers in the Given range :");
+			for (int i=min; i<=max; i++)
+			{
+				int rev=0;
+				for (int temp=i; temp>0 ; temp=temp/10)
+				{
+					rev=rev*10+(temp%10);
+				}
+				if(rev==i)
+					System.out.println(i);
+			}
+	}
+}
 
