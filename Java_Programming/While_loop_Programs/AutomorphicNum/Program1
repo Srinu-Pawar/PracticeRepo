@@ -1,1 +1,27 @@
+//WAP to print Given Number is Automorphic or not 
+import java.util.Scanner;
+class AutomorphicNum
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int Num=sc.nextInt();
+		int sq=Num*Num;
+		boolean f=true;
+		while (Num>0)
+		{
+			if ((Num%10)!=(sq%10))
+			{
+				f=false;
+			}
+			Num=Num/10;
+			sq=sq/10;
+		}
+		if(f==true)
+			System.out.println("Automorphic Number :");
+		else
+			System.out.println("Not Automorphic Number :");
+	}
+}
 
