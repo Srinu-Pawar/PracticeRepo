@@ -1,1 +1,26 @@
+//WAP to print Given Number is Automorphic or Not Using For Loop....
+import java.util.Scanner;
+class AutomorphicNumUsingFor 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int Num=sc.nextInt();
+		int sq=Num*Num;
+		boolean f=true;
+		for (int temp=Num; temp>0; temp=temp/10,sq=sq/10)
+		{
+			if (temp%10 != sq%10)
+			{
+				f=false;
+				break;
+			}
+		}
+		if(f==true)
+			System.out.println("Automorphic Number :");
+		else
+			System.out.println("Not Automorphic Number :");
+	}
+}
 
