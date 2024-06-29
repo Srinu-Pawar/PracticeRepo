@@ -1,1 +1,46 @@
+//WAP to print Given Number is Tech number or Not using Method....
+import java.util.Scanner;
+class TechNumUsingMethod 
+{
+	public static void techNumber(int Num)
+	{
+		int count=0;
+		int temp=Num;
+		while (temp>0)
+		{
+			count++;
+			temp=temp/10;
+		}
+		if(count%2==1)
+		{
+			System.out.println("Given Number is can not split...");
+		}
+		else
+		{
+			 int div=1;
+			for (int i=1; i<=count/2; i++)
+			{
+				div=div*10;
+			}
+			int fh=Num/div;
+			int sh=Num%div;
+			int sum=fh+sh;
+			if (sum*sum==Num)
+			{
+				System.out.println("tech Number :");
+			}
+			else
+			{
+				System.out.println("Not Tech Number :");
+			}
+		}
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number: ");
+		int n=sc.nextInt();
+		techNumber(n);
+	}
+}
 
