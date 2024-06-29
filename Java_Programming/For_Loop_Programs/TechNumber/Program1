@@ -1,1 +1,37 @@
-
+//WAP to Print Given Number is tech Number or Not....
+import java.util.Scanner;
+class TechNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int Num=sc.nextInt();
+		int temp=Num;
+		int count=0,div=1,sum=0;
+		while (temp>0)
+		{
+			count++;
+			temp=temp/10;
+		}
+		if(count%2==1)
+		{
+			System.out.println("Given Number can not be Split...");
+		}
+		else
+		{
+		    for (int i=1; i<=count/2; i++ )
+			{
+				div=div*10;
+			}
+			int FH=(Num/div);
+			int SH=(Num%div);
+			sum=FH+SH;
+		}
+		if(sum*sum==Num)
+			System.out.println("tech Number :");
+		else
+			System.out.println("Not a tech number :");
+		
+	}
+}
