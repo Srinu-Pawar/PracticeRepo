@@ -1,1 +1,38 @@
+//WAP to print Next Automorphic Number of Given Number Using Method...
+import java.util.Scanner;
+class NextAutomorphicOfGivenNumUsingMethod 
+{
+	public static void nextAutomorphic(int temp)
+	{
+	
+		while (true)
+		{
+			boolean isAuto=true;
+			int num=++temp;
+			int sq=(num*num);
+			while (num>0)
+			{
+				if ((num%10)!=(sq%10))
+				{
+					isAuto=false;
+					break;
+				}
+				num=num/10;
+				sq=sq/10;
+			}
+			if (isAuto==true)
+			{
+				System.out.println("Next Num of A given Num:"+temp);
+				break;
+			}
+		}
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number :");
+		int n=sc.nextInt();
+		nextAutomorphic(n);
+	}
+}
 
