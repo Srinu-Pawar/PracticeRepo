@@ -1,1 +1,43 @@
+//WAP to print the Nth Automorphic Num Using method...
+import java.util.Scanner;
+class NthAutomorphicNumUsingMethod 
+{
+	public static boolean NthAuto(int num)
+	{
+		boolean isAuto=true;
+		int sq=num*num;
+		while (num>0)
+		{
+			if ((num%10)!=(sq%10))
+			{
+				isAuto=false;
+				break;
+			}
+			num=num/10;
+			sq=sq/10;
+		}
+		if (isAuto==true)
+		return true;
+		else
+		return false;
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number...");
+		int n=sc.nextInt();
+		int sln=1;
+		for (int i=1; sln<=n; i++)
+		{
+		  if(NthAuto(i)==true)
+			{
+			  if (sln==n)
+			  {
+				  sln++;
+				  System.out.println("Nth Number of Automorphic Num is:"+i);
+			  }
+			}
+		}
+	}
+}
 
