@@ -1,1 +1,27 @@
+//WAP to print Given number is Strong Number or not Using for loop 
+import java.util.Scanner;
+class StrongNumberUsingFor
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int num=sc.nextInt();
+		int sum=0;
+		for(int temp=num; temp>0; temp=temp/10)
+		{
+			int ld=temp%10;
+			int fact=1;
+			for (int i=1; i<=ld; i++)
+			{
+				fact=fact*i;
+			}
+			sum=sum+fact;
+		}
+		if (sum==num)
+			System.out.println("Strong Number  :");
+		else 
+			System.out.println("Not Strong Number :");
+	}
+}
 
