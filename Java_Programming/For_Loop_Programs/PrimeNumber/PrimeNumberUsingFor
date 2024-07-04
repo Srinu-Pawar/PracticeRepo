@@ -1,6 +1,6 @@
-//WAP to print Given Number is Prime Number or Not
+//WAP to print Given Number is Prime Number or Not Using For Loop taking boolean 
 import java.util.Scanner;
-class PrimeNumber1
+class PrimeNumberUsingFor
 {
 	public static void main(String[] args) 
 	{
