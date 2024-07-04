@@ -1,6 +1,6 @@
 //WAP to print Next prime Number in the Given Number Using for Loop....
 import java.util.Scanner;
-class NextPrimeNumOfGivenNum 
+class NextPrimeNumOfGivenNumUsingFor
 {
 	public static void main(String[] args) 
 	{
