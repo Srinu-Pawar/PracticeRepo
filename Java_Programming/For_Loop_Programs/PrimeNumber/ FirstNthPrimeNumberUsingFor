@@ -1,6 +1,6 @@
-//WAP to print FirstNth Prime Number 
+//WAP to print FirstNth Prime Number Using For Loop
 import java.util.Scanner;
-class FirstNthPrimeNumber 
+class FirstNthPrimeNumberUsingFor
 {
 	public static void main(String[] args) 
 	{
