@@ -1,5 +1,5 @@
-//WAP to print Prime Number from 1 to 100 with sln(Serial)
-class PrimeNumFrom1to100 
+//WAP to print Prime Number from 1 to 100 with sln(Serial) Using For loop
+class PrimeNumFrom1to100UsingFor 
 {
 	public static void main(String[] args) 
 	{
