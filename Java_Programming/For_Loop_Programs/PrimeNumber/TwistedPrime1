@@ -1,6 +1,6 @@
 //WAP to Print the Given Number is Twisted prime Number or Not
 import java.util.Scanner;
-class TwistedPrime 
+class TwistedPrime1 
 {
 	public static void main(String[] args) 
 	{
