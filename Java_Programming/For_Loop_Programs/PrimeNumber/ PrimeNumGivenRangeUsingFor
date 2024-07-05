@@ -1,6 +1,6 @@
 //WAP to Print prime number of given Range using for loop
 import java.util.Scanner;
-class PrimeNumGivenRange 
+class PrimeNumGivenRangeUsingFor 
 {
 	public static void main(String[] args) 
 	{
