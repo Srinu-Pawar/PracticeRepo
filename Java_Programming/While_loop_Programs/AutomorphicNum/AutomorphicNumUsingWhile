@@ -1,6 +1,6 @@
-//WAP to print Given Number is Automorphic or not 
+//WAP to print Given Number is Automorphic or not Using While Loop
 import java.util.Scanner;
-class AutomorphicNum
+class AutomorphicNumUsingWhile
 {
 	public static void main(String[] args) 
 	{
