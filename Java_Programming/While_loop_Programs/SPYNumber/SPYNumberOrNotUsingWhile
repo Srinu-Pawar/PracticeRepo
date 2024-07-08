@@ -1,6 +1,6 @@
 //WAP to Print the Given Number is SPY Number or Not Using While Loop
 import java.util.Scanner;
-class SPYNumberOrNot  
+class SPYNumberOrNotUsingWhile  
 {
 	public static void main(String[] args) 
 	{
