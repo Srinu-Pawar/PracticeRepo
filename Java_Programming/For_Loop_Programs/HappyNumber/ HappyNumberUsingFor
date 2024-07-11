@@ -1,6 +1,6 @@
 //WAP to print given Number is Happy Number or Not 
 import java.util.Scanner;
-class HappyNumber 
+class HappyNumberUsingFor
 {
 	public static void main(String[] args) 
 	{
