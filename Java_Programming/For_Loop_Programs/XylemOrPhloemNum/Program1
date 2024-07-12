@@ -1,1 +1,29 @@
+//WAP to Print the given number is Xylem Or Phloem Number Using for loop
+import java.util.Scanner;
+class XylemOrPhloemNumUsingFor
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number..");
+		int num=sc.nextInt();
+		int sum1=0,sum2=0;
+		sum1=sum1+num%10;
+		num=num/10;
+		int i=num;
+		for(  ; i>9; i=i/10)
+		{
+			sum2=sum2+i%10;
+		}
+		sum1=sum1+i;
+		if (sum1==sum2)
+		{
+			System.out.println("xylem number...");
+		}
+		else
+		{
+			System.out.println("Phloem Number.....");
+		}
+	}
+}
 
