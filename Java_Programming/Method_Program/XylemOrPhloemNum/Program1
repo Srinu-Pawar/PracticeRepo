@@ -1,1 +1,29 @@
+//WAP to print Given Number is Xylem or Phloem Number Using Method....
+import java.util.Scanner; 
+class XylemNumOrPhoemNumUsingMethod 
+{
+	public static void xylemNum(int num)
+	{
+		int sum1=0,sum2=0;
+		sum1=sum1+num%10;
+		num=num/10;
+		while (num>9)
+		{
+			sum2=sum2+num%10;
+			num=num/10;
+		}
+		sum1=sum1+num;
+		if (sum1==sum2)
+		System.out.println("Xylem Number :");
+		else 
+		System.out.println("Phloem Number :");
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number");
+		int n=sc.nextInt();
+		xylemNum(n);
+	}
+}
 
