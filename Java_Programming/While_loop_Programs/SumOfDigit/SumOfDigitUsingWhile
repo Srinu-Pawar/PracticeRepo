@@ -1,6 +1,6 @@
 //WAP to print sum of the Digit of Given number using while loop
 import java.util.Scanner;
-class SumOfDigit 
+class SumOfDigitUsingWhile 
 {
 	public static void main(String[] args) 
 	{
