@@ -1,1 +1,26 @@
+//WAP to print given Number is Sunny Number or Not...
+import java.util.Scanner;
+class SunnyNum
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int n=sc.nextInt();
+		int i=1;
+		boolean S=false;
+		while (i*i<=n+1)
+		{
+			if (i*i==n+1)
+			{
+				S=true;
+			}
+			i++;
+		}
+		if(S==true)
+		System.out.println("Sunny Num ...");
+		else
+		System.out.println("Not Sunny Num.....");
+	}
+}
 
