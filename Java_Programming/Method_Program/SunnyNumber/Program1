@@ -1,1 +1,39 @@
+//WAP to Print The Sunny Number of the Given Range Using Method....
+import java.util.Scanner;
+class SunnyNumRangeUsingMethod 
+{
+	public static void SunnyNumRange(int min,int max)
+	{
+		int sln=1;
+		for (int i=min; i<=max; i++)
+		{
+			boolean S=false;
+			int temp=i;
+			int j=1;
+			while (j*j<=(temp+1))
+			{
+				if(j*j==temp+1)
+				{
+					S=true;
+					//break;
+				}
+				j++;
+			}
+			if (S==true)
+			{
+			System.out.println(sln+")"+temp);
+			sln++;
+			}
+		}
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Min and Max Values one by one...");
+		int min=sc.nextInt();
+		int max=sc.nextInt();
+		System.out.println("The Range of Sunny Numbes  :");
+		SunnyNumRange(min,max);
+	}
+}
 
