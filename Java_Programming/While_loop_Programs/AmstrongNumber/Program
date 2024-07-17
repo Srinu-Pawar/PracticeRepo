@@ -1,1 +1,35 @@
+//WAP to Print the Given Number is Amstrong Number or Not...
+import java.util.Scanner;
+class AmstrongNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number :");
+		int num=sc.nextInt();
+		int temp=num;
+		int count=0,sum=0;
+		while (temp>0)
+		{
+			count++;
+			temp=temp/10;
+		}
+		temp=num;
+		while (temp>0)
+		{
+			int div=1;
+			int ld=temp%10;
+			for (int i=1; i<=count; i++)
+			{
+				div=div*ld;
+			}
+			sum=sum+div;
+			temp=temp/10;
+		}
+		if (sum==num)
+		System.out.println("Amstrong number ");
+		else
+		System.out.println("Not Amstrong Number");
+	}
+}
 
