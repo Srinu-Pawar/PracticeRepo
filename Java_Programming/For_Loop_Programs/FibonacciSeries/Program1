@@ -1,6 +1,6 @@
-//WAP to print Fibonacci series from Given N terms...
+//WAP to print Fibonacci series from Given N terms using For Loop...
 import java.util.Scanner;
-class FibonacciSeries 
+class FibonacciSeriesUsingFor 
 {
 	public static void main(String[] args) 
 	{
