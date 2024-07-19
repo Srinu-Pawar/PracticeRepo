@@ -1,4 +1,4 @@
-
+//WAP to Print Multiplication of Given Number Using For loop
 import java.util.Scanner;
 class MultiplicationTable 
 {
