@@ -1,6 +1,6 @@
 //WAP to Print the multiplication table Of a Given Range....
 import java.util.Scanner;
-class MulTableGivenRange 
+class MulTableGivenRangeUsingFor
 {
 	public static void main(String[] args) 
 	{
