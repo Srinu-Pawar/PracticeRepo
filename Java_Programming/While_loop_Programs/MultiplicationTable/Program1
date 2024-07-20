@@ -1,3 +1,4 @@
+//WAP to Print Multiplication Table of Given Number Using While Loop
 import java.util.Scanner;
 class MultiplicationTable 
 {
