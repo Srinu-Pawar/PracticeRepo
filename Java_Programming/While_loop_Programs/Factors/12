@@ -1,1 +1,27 @@
+//WAP to print Factors Of a Given Range Using While loop
+import java.util.Scanner;
+class FactorsOfGivenRangUsingwhile 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Min value:");
+		int min=sc.nextInt();
+		System.out.println("Enter max value :");
+		int max=sc.nextInt();
+		while (min<=max)
+		{
+			for(int i=1; i<=min; i++)
+			{
+				if(min%i==0)
+				{
+					System.out.println(i);
+				}
+			}
+			min++;
+			System.out.println("Factor of "+min+" is");
+		
+		}
+	}
+}
 
