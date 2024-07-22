@@ -1,3 +1,4 @@
+//WAP to Print the factors Of a Given Number Using While loop
 import java.util.Scanner;
 class FactorsOfGivenNumUsingWhile
 {
