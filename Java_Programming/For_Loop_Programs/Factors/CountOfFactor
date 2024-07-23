@@ -1,4 +1,4 @@
-//WAP to print count of Faactor's
+//WAP to print count of Factor's of a Given Number
 import java.util.Scanner;
 class CountOfFactor 
 {
