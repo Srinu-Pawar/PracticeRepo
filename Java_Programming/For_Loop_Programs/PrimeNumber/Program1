@@ -13,7 +13,6 @@ class PrimeNumber
 			if(n%i==0)
 				count++;
 		}
-		System.out.println("count of factor:"+count);
 		if(count==2)
 			System.out.println("Given number is prime");
 		else
