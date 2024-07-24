@@ -1,4 +1,4 @@
-//WAP to print Given Number is Prime or Not
+//WAP to print Given Number is Prime Number or Not
 import java.util.Scanner;
 class PrimeNumber 
 {
