@@ -1,1 +1,31 @@
-
+//WAP to Print the Sum of the largest and Smallest digit in a Number 
+import java.util.Scanner;
+class SumOfLargest 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a Number ");
+		int num=sc.nextInt();
+		int temp=num;
+		int sum1=0,sum2=0;
+		int largest=0,smallest=9;
+		while (temp>0)
+		{
+			
+			int ld=temp%10;
+			if (ld<smallest)
+			{
+				ld=smallest;
+				sum1=sum1+smallest;
+			}
+			if (ld>largest)
+			{
+				largest=ld;
+				sum2=sum2+largest;
+			}
+			temp=temp/10;
+		}
+		System.out.println(sum1+" ." +sum2);
+	}
+}
