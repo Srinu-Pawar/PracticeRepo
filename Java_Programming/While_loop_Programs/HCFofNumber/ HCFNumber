@@ -1,6 +1,6 @@
 //WAP to print the HCF of a Number Using While loop....
 import java.util.Scanner;
-class HCFNum2 
+class HCFofNumber 
 {
 	public static void main(String[] args) 
 	{
