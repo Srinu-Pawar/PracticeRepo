@@ -1,1 +1,21 @@
+//WAP to print the HCF of a Number....
+import java.util.Scanner;
+class HCFNum2 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter divisor ...");
+		int divisor=sc.nextInt();
+		System.out.println("Enter divident ...");
+		int divident=sc.nextInt();
+		while (divisor!=0)
+		{
+			int rem=divident%divisor;
+			divident=divisor;
+			divisor=rem;
+		}
+		System.out.println("HCF is :"+divident);
+	}
+}
 
