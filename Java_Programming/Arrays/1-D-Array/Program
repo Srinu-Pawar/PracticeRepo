@@ -25,3 +25,34 @@ Choose two gauntlets with the color 4 and pair them.
 Then, you will be left with one sock with the color 4 and another with the color 7, so you can no longer do the operation. There is no way to do the operation three or more times, so you should print 2.
 */
 
+import java.io.*;
+import java.util.*;
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        int[] arr=new int[N];
+        for(int i=0; i<N; i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        
+        HashMap<Integer, Integer> hm = new HashMap<>();
+        for(int i=0; i<N; i++){
+            if(hm.containsKey(arr[i])){ // if key exists enter if block else enter into else block;
+                hm.put( arr[i],hm.get(arr[i]) +1);
+            }
+            else{
+                hm.put( arr[i], 1);
+            }
+        }
+        int pairs = 0;
+        for(int kee : hm.keySet()){
+            int value = hm.get(kee);
+            pairs = pairs +(value/2);
+        }
+        System.out.println(pairs);      
+    }
+}
