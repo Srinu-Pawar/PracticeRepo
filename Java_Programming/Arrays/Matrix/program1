@@ -23,11 +23,40 @@ Input
 
 Output
 28
-*/
-
 
 Explanation
-
-
-
 Sum of elements from {1,1} to {2, 2} is (5+6+8+9) = 28.
+*/
+
+import java.io.*;
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        int l=sc.nextInt();
+        int p=sc.nextInt();
+        int m=sc.nextInt();
+        int q=sc.nextInt();
+        int[][] mat=new int[N][N];
+        for(int i=0; i<N; i++)
+        {
+            for(int j=0; j<N; j++)
+            {
+                mat[i][j]=sc.nextInt();
+            }
+        }
+        int sum=0;
+        for(int i=l; i<=m; i++)
+        {
+            for(int j=p; j<=q; j++)
+            {
+                sum=sum+mat[i][j];
+            }
+        }
+        System.out.println(sum);
+    }
+}
