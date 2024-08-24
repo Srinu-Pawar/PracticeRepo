@@ -27,7 +27,6 @@ The sum of the lower triangle matrix is 5 - 3 + 4 + 2 + 6 + 1 = 15.
 
 import java.io.*;
 import java.util.*;
-
 public class Main
 {
     public static void main(String[] args) 
