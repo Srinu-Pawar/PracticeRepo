@@ -24,7 +24,6 @@ The binary form of 10 is `1010`. So, the 1st bit in 10 is set. Note that the LSB
 
 import java.io.*;
 import java.util.*;
-
 public class Main 
 {
     public static boolean checkBit(int n, int i)
