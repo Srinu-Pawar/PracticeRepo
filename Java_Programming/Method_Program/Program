@@ -21,3 +21,30 @@ true
 Explanation
 The binary form of 10 is `1010`. So, the 1st bit in 10 is set. Note that the LSB bit is referred to as the 0th bit
 */
+
+import java.io.*;
+import java.util.*;
+
+public class Main 
+{
+    public static boolean checkBit(int n, int i)
+    {
+         if((n&1<<i)!=0)
+         {
+         return true;
+         }
+         else
+         {
+             return false;
+         }
+    }
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        int i=sc.nextInt();
+       
+        System.out.println(checkBit(N,i));
+       
+    }
+}
