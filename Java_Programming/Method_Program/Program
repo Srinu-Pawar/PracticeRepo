@@ -44,6 +44,5 @@ public class Main
         Scanner sc=new Scanner(System.in);
         int N=sc.nextInt();
         System.out.print(fib(N)+" ");
-
     }
 }
