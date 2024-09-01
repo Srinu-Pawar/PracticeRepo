@@ -22,3 +22,28 @@ The fibonacci series:
 0, 1, 1, 2, 3, 5, 8,......
 At 4th position, we have 3.
 */
+import java.io.*;
+import java.util.*;
+
+public class Main 
+{
+    public static int fib(int N)
+    {
+        if(N==0)
+        {
+            return 0;
+        }
+        if(N==1 || N==2)
+        {
+            return 1;
+        }
+        return fib(N-1)+fib(N-2);
+    }
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        System.out.print(fib(N)+" ");
+
+    }
+}
