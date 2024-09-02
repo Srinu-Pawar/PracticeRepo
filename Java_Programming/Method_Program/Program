@@ -17,3 +17,25 @@ Input
 Output
 10
 */
+
+import java.io.*;
+import java.util.*;
+
+public class Main
+{
+    public static long naturalSum(long n)
+    {
+        if(n==1)
+        {
+            return 1;
+        }
+        return n*(n+1)/2;
+    }
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        long N=sc.nextLong();
+        long ans=naturalSum(N);
+        System.out.println(ans);
+    }
+}
