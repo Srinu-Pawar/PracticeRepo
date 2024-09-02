@@ -1,4 +1,4 @@
-Natural Numbers Sum 
+/*Natural Numbers Sum 
 Given positive integer - N, print the sum of the first N natural numbers.
 
 Input Format
@@ -16,3 +16,4 @@ Input
 
 Output
 10
+*/
