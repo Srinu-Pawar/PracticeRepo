@@ -1,4 +1,4 @@
-Narcissistic Numbers 
+/*Narcissistic Numbers 
 Given an integer N, check whether it is a Narcissistic number or not.
 Note that a Narcissistic number is a number that is the sum of its own digits each raised to the power of the number of digits
 
@@ -20,3 +20,4 @@ Yes
 
 Explanation
 84 + 24 + 04 + 84 = 8208
+*/
