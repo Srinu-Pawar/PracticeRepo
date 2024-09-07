@@ -21,3 +21,39 @@ Yes
 Explanation
 84 + 24 + 04 + 84 = 8208
 */
+
+import java.io.*;
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+       Scanner sc=new Scanner(System.in);
+       int Num=sc.nextInt();
+       int temp=Num;
+       int count=0;
+       while(temp!=0)
+       {
+           count++;
+           temp/=10;
+       }
+        temp=Num;
+       int sum=0;
+       while(temp!=0)
+       {
+           int ld=temp%10;
+           int prod=1;
+           for(int i=1; i<=count; i++)
+           {
+               prod=prod*ld;
+           }
+        sum=sum+prod;
+        temp=temp/10;
+       }
+       if(sum==Num)
+       System.out.println("Yes");
+       else
+       System.out.println("No");
+    }
+}
