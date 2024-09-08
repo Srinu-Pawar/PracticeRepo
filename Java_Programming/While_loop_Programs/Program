@@ -22,3 +22,26 @@ Explanation
 18 / (1 + 8) = 2
 As 18 is divisible by the sum of its digits, it is a Harshad number.
 */
+
+import java.io.*;
+import java.util.*;
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+       Scanner sc=new Scanner(System.in);
+       int Num=sc.nextInt();
+       int temp=Num;
+       int sum=0;
+       while(temp!=0)
+       {
+           sum+=temp%10;
+           temp/=10;
+       }
+       if(Num%sum==0)
+       System.out.println("Yes");
+       else
+       System.out.println("No");
+    }
+}
