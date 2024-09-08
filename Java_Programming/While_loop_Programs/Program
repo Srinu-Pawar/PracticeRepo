@@ -1,4 +1,4 @@
-Harshad Numbers 
+/*Harshad Numbers 
 Given an integer N, check whether it is a Harshad number or not.
 Note that a Harshad number is an integer, that is divisible by the sum of its digits.
 
@@ -21,3 +21,4 @@ Yes
 Explanation
 18 / (1 + 8) = 2
 As 18 is divisible by the sum of its digits, it is a Harshad number.
+*/
