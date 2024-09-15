@@ -1,4 +1,4 @@
-Half Diamond 
+/*Half Diamond 
 Print half diamond pattern using '*'. See the example for more details.
 
 Input Format
@@ -24,3 +24,4 @@ Output
 ***
 **
 *
+*/
