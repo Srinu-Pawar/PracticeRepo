@@ -1,4 +1,4 @@
-Half Diamond with Numbers 
+/*Half Diamond with Numbers 
 Given a value N, print a half diamond pattern with numbers. See examples for more details.
 
 Input Format
@@ -24,4 +24,4 @@ Output
 1 2 3
 1 2
 1
-
+*/
